@@ -4,11 +4,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // In a real app, handle form submission here
-    alert("Message sent! (Mock)");
-  };
+
 
   return (
     <section id="contact" className="contact">
@@ -46,7 +42,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <form name='contact' className="contact-form glass-card" method="POST" data-netlify="true">
+          <form name='contact' className="contact-form glass-card" method="POST" netlify>
             <input type="hidden" name="form-name" value="contact" />
             <div className="form-group">
               <label htmlFor="name">Name</label>

@@ -169,13 +169,24 @@
 }
 
 @media (max-width: 576px) {
+  .hero-container {
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+
   .name {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    white-space: normal;
   }
 
   .title {
-    font-size: 1.5rem;
-    min-height: 4.5rem;
+    font-size: 1.2rem;
+    min-height: 2rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+    margin-bottom: 2rem;
   }
 
   .hero-buttons {
@@ -184,12 +195,13 @@
   }
 
   .hero-image {
-    width: 280px;
-    height: 280px;
+    width: 260px;
+    height: 260px;
+    border-width: 4px;
   }
   
   .hero-image-wrapper::before {
-    width: 340px;
-    height: 340px;
+    width: 300px;
+    height: 300px;
   }
 }

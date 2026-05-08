@@ -157,3 +157,17 @@ section:not(:first-child)::before {
   background: linear-gradient(90deg, transparent, var(--primary-glow), transparent);
   opacity: 0.2;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  section {
+    padding: 60px 0;
+  }
+}
