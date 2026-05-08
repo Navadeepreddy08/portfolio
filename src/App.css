@@ -1,0 +1,10 @@
+/* App.css is mostly handled by index.css but we can keep it for App-specific layout if needed */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
