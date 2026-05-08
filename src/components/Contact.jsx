@@ -46,20 +46,21 @@ const Contact = () => {
             </div>
           </div>
 
-          <form className="contact-form glass-card" onSubmit={handleSubmit}>
+          <form name='contact' className="contact-form glass-card" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
             <div className="form-group">
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" placeholder="Your Name" required />
+              <input type="text" id="name" name='name' placeholder="Your Name" required />
             </div>
 
             <div className="form-group">
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" placeholder="Your Email" required />
+              <input type="email" id="email" name='email' placeholder="Your Email" required />
             </div>
 
             <div className="form-group">
               <label htmlFor="message">Message</label>
-              <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+              <textarea id="message" name='message' rows="5" placeholder="Your Message" required></textarea>
             </div>
 
             <button type="submit" className="btn btn-primary submit-btn">
